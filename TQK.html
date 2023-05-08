@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <title>Page Title</title>
+
+    <style type="text/css"> 
+
+        ul
+        { 
+        overflow-x:hidden;
+        white-space:nowrap; 
+        height: 1em;
+        width: 100%;
+        
+        } 
+        
+        li
+        { 
+        display:inline; 
+        padding: 1px;  
+        padding-left: 20px;
+        }       
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1>Devera Store</h1>
+        <ul>
+            <li><a href="">Home</a></li> 
+            <li><a href="">News</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Add Product</h2>
+        <form>
+            <div style="margin-left: 4%">
+                <label for="pname">Product name:</label>
+                <input style="margin-left: 0.5%" type="text" id="pname" name="pname">
+
+                <label style="margin-left: 20%" for="cate">Category:
+                    <select id="cate" name="cate">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                    </select>
+                </label><br><br>
+            
+            
+                <label for="price">Price:</label>
+                <input style="margin-left: 5%" type="number" id="price" name="price" min="1">
+
+                <input style="margin-left: 23%" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Free ship</label><br><br>
+
+                <label for="description">Description:</label>
+                <input style="height:50px;width:200px;font-size:14pt;" type="text" id="description" name="description"><br><br>
+
+                <label for="img">Image:</label>
+                <img src="blank.jpg" style="height:50px;width:50ps;font-size:14pt;" alt="Blank"><br><br>
+                
+                
+                <input type="radio" id="china" name="country" value="China">
+                <label for="html">China</label><br>
+                <input type="radio" id="vietnam" name="country" value="Vietnam">
+                <label for="css">Vietnam</label>
+                
+                <input type="submit" style="margin-left: 20%" value="Create">
+
+            </div>
+            
+        </form>
+    </div>
+    <script src="" async defer></script>
+</body>
+
+<footer>
+    
+    <p style="margin-left: 20%">Devera 2022</p>
+  </footer>
+</html>
