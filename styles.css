@@ -1,3 +1,8 @@
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
 .cate_up{
     text-align: center;
     padding: 10px 10px 10px 10px;
@@ -11,7 +16,7 @@
 }
 
 .title{
-    background-color: aliceblue;
+    background-image: linear-gradient(to right, orange , red, );
     text-align: center;
     margin: auto auto 50px ;
     padding-top: 50px;
@@ -37,6 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .img_relative {    
@@ -45,6 +51,7 @@
     display: inline-block;
     width: 300px;
     height:200px;
+    
   }
 
 .img_absolute{
@@ -54,7 +61,5 @@
     transform: translate(-50%, -50%);
     color: white;
 }
-
-
 
 
