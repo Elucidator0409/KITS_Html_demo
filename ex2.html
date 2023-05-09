@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+</head>
+<body>
+    <div>
+        <h2>Sự khác nhau giữa thẻ span và thẻ div</h2><br>
+        <span>Thẻ span</span>
+        <span>Thẻ span</span>
+        <span>Thẻ span</span>
+        <span>Thẻ span</span>
+        <div>Thẻ div</div>
+        <div>Thẻ div</div>
+        <div>Thẻ div</div>
+        <div>Thẻ div</div>
+    </div>
+
+    <div>
+        <h3>Table</h3>
+        <table style="width:100%">
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+          </table>
+    </div>
+
+    <div>
+        <h3>HTML form</h3>
+        <form>
+            <label for="name">Enter name:</label>
+            <input style="margin-left: 3.5%" type="text" id="name" name="name"><br><br>
+
+            <label for="password">Enter password:</label>
+            <input  type="text" id="password" name="password"><br><br>
+            
+            <label for="email">Enter email:</label>
+            <input style="margin-left: 3.5%" type="text" id="email" name="email"><br><br>
+            
+            <label for="gen">Enter Gender:</label>
+            <input type="radio" id="male" name="gen" value="male">
+            <label for="male">male</label>
+            <input type="radio" id="female" name="gen" value="female">
+            <label for="female">female</label><br><br>
+
+            <label for="country">Select country:
+                <select id="country" name="country">
+                    <option value="india">India</option>
+                    <option value="thailand">Thailand</option>
+                    <option value="vietnam">Vietnam</option>
+                    <option value="aus">Australia</option>
+                </select>
+            </label><br><br>
+
+            <input type="submit"  value="Register">
+
+            
+            
+        </form>
+    </div>
+    
+</body>
+</html>
