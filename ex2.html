@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        table, th, td {
-          border:1px solid black;
-        }
-        </style>
+    
 </head>
 <body>
     <div>
@@ -47,13 +43,17 @@
 
     <div>
         <h3>HTML form</h3>
-        <form>
-            <label for="name">Enter name:</label>
-            <input style="margin-left: 3.5%" type="text" id="name" name="name"><br><br>
+        <form action="#">
+            <table>
+            <tr>
+                <td><label for="name">Enter name:</label></td>
+                <td><input  type="text" id="name" name="name" style="width:160px"></td>
+            </tr>
 
-            <label for="password">Enter password:</label>
-            <input  type="text" id="password" name="password"><br><br>
-            
+            <tr>
+                <td><label for="password">Enter password:</label></td>
+                <td><input type="text" id="password" name="password" style="width:160px"></td>
+            </tr>
             <label for="email">Enter email:</label>
             <input style="margin-left: 3.5%" type="text" id="email" name="email"><br><br>
             
@@ -75,7 +75,7 @@
             <input type="submit"  value="Register">
 
             
-            
+            </table>
         </form>
     </div>
     
