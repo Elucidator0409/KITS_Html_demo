@@ -1,39 +1,171 @@
 /* Style the sidebar - fixed full height */
 .sidebar {
-    height: 100%;
-    width: 160px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: orange;
-    overflow-x: hidden;
-    padding-top: 16px;
-  }
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FFC297;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  margin: 40px 0 40px 40px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  align-content: center;
+}
+
+#logo{
+  padding: 6px 8px 6px 16px;
+  margin: 40px 0 20px 10px !important;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  align-content: center;
+}
+
+#setting_icon{
+  padding: 6px 8px 6px 16px;
+  margin: 250px 0 20px 40px !important;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  align-content: center;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+
+/* Style the main content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
   
-  /* Style sidebar links */
-  .sidebar a {
-    padding: 6px 8px 6px 16px;
-    margin: 40px 0 40px 0;
-    text-decoration: none;
-    font-size: 20px;
-    color: #818181;
-    display: block;
-  }
   
-  /* Style links on mouse-over */
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
   
-  /* Style the main content */
-  .main {
-    margin-left: 480px; /* Same as the width of the sidenav */
-    padding: 0px 10px;
-  }
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
   
-  /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
+}
+
+/* Style the setting  */
+.setting {
+  margin-left: 160px; 
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 175px;
+  border-right: groove;
+}
+
+.setting a {
+  padding: 6px 8px 6px 16px;
+  margin: 40px 0 40px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+}
+
+.body_content{
+  font-family:Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  margin-left: 320px; 
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  border-right: groove;
+
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  padding: 10px;
+  height: 100vh;
+}
+
+.content {
+  width: 100%;
+  max-width: 1000px;
+  height: 350px;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  
+}
+
+.content .title{
+  font-size: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.content .title::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+
+}
+
+.user-details .input-box .details{
+  display: block;
+  font-weight: 500;
+
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 5px ;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+}
+  
+ 
