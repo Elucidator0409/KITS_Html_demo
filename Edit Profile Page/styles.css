@@ -14,7 +14,7 @@
 /* Style sidebar links */
 .sidebar a {
   padding: 6px 8px 6px 16px;
-  margin: 40px 0 40px 40px;
+  margin: 40px 0 40px 50px;
   text-decoration: none;
   font-size: 20px;
   color: #818181;
@@ -33,10 +33,10 @@
 }
 
 #setting_icon{
-  padding: 6px 8px 6px 16px;
-  margin: 250px 0 20px 40px !important;
+  padding: px 8px 6px 16px;
+  margin: 500px 0 20px 50px !important;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 50px;
   color: #818181;
   display: block;
   align-content: center;
@@ -67,7 +67,7 @@
 .setting {
   margin-left: 160px; 
   height: 100%;
-  width: 200px;
+  width: 300px;
   position: fixed;
   z-index: -1;
   top: 0;
@@ -90,7 +90,7 @@
 .body_content{
   font-family:Arial, Helvetica, sans-serif;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
-  margin-left: 320px; 
+  margin-left: 460px; 
   height: 100%;
   width: 100%;
   position: fixed;
@@ -101,7 +101,7 @@
   border-right: groove;
 
   display: flex;
-  justify-content:center;
+  justify-content:flex-start;
   align-items:center;
   padding: 10px;
   height: 100vh;
@@ -110,10 +110,11 @@
 .content {
   width: 100%;
   max-width: 1000px;
-  height: 350px;
+  height: 500px;
   background: #fff;
   padding: 25px 30px;
   border-radius: 5px;
+  margin-bottom: 400px;
   
 }
 
@@ -160,12 +161,97 @@ form .user-details .input-box{
   border: 1px solid #ccc;
   padding-left: 15px;
   font-size: 16px;
-  border-bottom-width: 5px ;
+  border-bottom-width: 5px ; /* danh khoi cho input box */
+  transition: all 0.3s ease;
 }
 
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
   border-color: #9b59b6;
 }
+
+form .button{
+  height: 45px;
+  width: 100%;
+  margin: 45px 0 ;
+  transition: height 2s;
+}
+
+form .button:hover{
+  height:100px;
   
- 
+}
+
+form .button input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+form .button input:hover{
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+  
+@media (max-width: 1000px){
+  .content{
+    max-width: 100%;
+  }
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+}
+
+div.wrapper {
+  position: relative;
+  margin: 100px;
+}
+
+.wrapper img{
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  transition-duration: 1s;
+  transform-origin: bottom right;
+
+}
+
+div.wrapper:hover img.flower1 {
+  transform: rotate(-20deg);
+}
+
+div.wrapper:hover img.flower2 {
+  transform: rotate(60deg);
+}
+
+div.wrapper:hover img.flower3 {
+  transform: rotate(20deg);
+}
+
+@keyframes fadeIn{
+  0%{
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 500px;
+  }
+}
+
+.hide img{
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
